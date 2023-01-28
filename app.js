@@ -37,7 +37,7 @@ bot.action('que',(ctx)=>{
 })
 bot.action('go_back',(ctx)=>{
     // ctx.deleteMessage()
-    ctx.reply('hello',
+    ctx.reply('',
     {
         reply_markup:{inline_keyboard:[[
             {text:"Hackathon details",callback_data:'about'},{text:"Register Here",url:"https://castor-2023.devfolio.co/"}],[
