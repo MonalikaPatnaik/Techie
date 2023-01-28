@@ -27,7 +27,7 @@ bot.command('Menu',(ctx)=>{
 })
 bot.action('about',(ctx)=>{
     // ctx.deleteMessage()
-    ctx.reply("<b>About CASTOR 2023</b> 🤖\n\nCASTOR, the latter chapter, will be a 48-hour remarkable event with a vision of upskilling students through events of different technical and entrepreneurial domains, connecting with various tech leaders and inspiring individuals, and providing a platform for a comprehensive exchange of innovation.\n\n<b>Schedule📅</b> https://castor23.netlify.app/view/schedule.html \n\n<b>Prizes 🏆</b> https://castor23.netlify.app/index.html#prizes",{reply_markup:{inline_keyboard:[[
+    ctx.reply("📍<b>ABOUT CASTOR 2023</b> 🤖\n\nCASTOR, the latter chapter, will be a 48-hour remarkable event with a vision of upskilling students through events of different technical and entrepreneurial domains, connecting with various tech leaders and inspiring individuals, and providing a platform for a comprehensive exchange of innovation.\n\n📍<b>SCHEDULE📅</b>\n\n<b>Runs from\n</b>Jan 28 - 29, 2023\n\n<b>Happening</b>\nOnline\nhttps://castor-2023.devfolio.co/schedule \n\n📍<b>PRIZES 🏆</b>\nhttps://castor-2023.devfolio.co/prizes\n\n📍<b>RULES</b>📄\nhttps://devfolio.co/code-of-conduct",{reply_markup:{inline_keyboard:[[
         {text:"Go Back to menu",callback_data:'go_back'}]
     ]},parse_mode:"HTML"}
         
@@ -41,14 +41,14 @@ bot.action('go_back',(ctx)=>{
     {
         reply_markup:{inline_keyboard:[[
             {text:"Hackathon details",callback_data:'about'},{text:"Register Here",url:"https://castor-2023.devfolio.co/"}],[
-                {text:"Resources",url:"https://mellow-swing-850.notion.site/Castor-2023-7cd698ecaed84a92bbb7f969fe5ded9b"},{text:"Anything else",callback_data:'que'}  
+                {text:"Resources",callback_data:"res"},{text:"Anything else",callback_data:'que'}  
             ]
         ]
         
     }})
 })
 bot.action('res',(ctx)=>{
-    ctx.reply("👉<b>ONLINE RESOURCES</b> 🤖\n\n<b>Beginner’s guide before building a Chatbot</b> https://www.analyticsvidhya.com/blog/2021/06/beginners-guide-before-building-a-chatbot/ \n\n<b>How to build  a Telegram Bot in Python</b> https://www.geeksforgeeks.org/create-a-telegram-bot-using-python/ \n\n <b>How to build  a Telegram Bot in Javascript/NodeJs</b> https://www.geeksforgeeks.org/how-to-design-a-weather-bot-in-telegram-using-javascript/ \n\n👉<b>TUTORIALS</b>\n\n<b>Building Telegram bot in Python</b> https://youtu.be/227uk4kDTM8\n\n<b>Building Telegram bot in javascript Completet tutorial</b> https://youtube.com/playlist?list=PLX2ojSA27XYhIopdU2RRQIMe7gfwcKL84<b>Creating a Chatbot with Deep learning, Python and TensorFlo</b>\n1. https://youtube.com/playlist?list=PLQVvvaa0QuDdc2k5dwtDTyT9aCja0on8j\n2. https://youtu.be/RpWeNzfSUHw\n3. https://youtu.be/wypVcNIH6D4\n\n👉<b>SAMPLE PROJECTS</b>\n\n1. <b>Beginner-friendly Chatbots</b>\nhttps://github.com/topics/chatbot\n2. <b>Collection of Simple Chatbot Projects</b>\nhttps://github.com/parulnith/Building-a-Simple-Chatbot-in-Python-using-NLTK\n3. <b>AI Chatbot Projects</b>\nhttps://github.com/topics/ai-chatbot\n4. <b>ChatterBot</b>\nhttps://github.com/topics/chatbot-application",{reply_markup:{inline_keyboard:[[
+    ctx.reply("👉<b>ONLINE RESOURCES</b> 🤖\n\n🔹<b>Beginner’s guide before building a Chatbot</b> https://www.analyticsvidhya.com/blog/2021/06/beginners-guide-before-building-a-chatbot/ \n\n🔹<b>How to build  a Telegram Bot in Python</b> https://www.geeksforgeeks.org/create-a-telegram-bot-using-python/ \n\n🔹<b>How to build  a Telegram Bot in Javascript/NodeJs</b> https://www.geeksforgeeks.org/how-to-design-a-weather-bot-in-telegram-using-javascript/ \n\n👉<b>TUTORIALS</b>\n\n🔹<b>Building Telegram bot in Python</b> https://youtu.be/227uk4kDTM8\n\n🔹<b>Building Telegram bot in javascript Completet tutorial</b> https://youtube.com/playlist?list=PLX2ojSA27XYhIopdU2RRQIMe7gfwcKL84\n🔹<b>Creating a Chatbot with Deep learning, Python and TensorFlo</b>\n1. https://youtube.com/playlist?list=PLQVvvaa0QuDdc2k5dwtDTyT9aCja0on8j\n2. https://youtu.be/RpWeNzfSUHw\n3. https://youtu.be/wypVcNIH6D4\n\n👉<b>SAMPLE PROJECTS</b>\n\n🔹<b>Beginner-friendly Chatbots</b>\nhttps://github.com/topics/chatbot\n🔹<b>Collection of Simple Chatbot Projects</b>\nhttps://github.com/parulnith/Building-a-Simple-Chatbot-in-Python-using-NLTK\n🔹<b>AI Chatbot Projects</b>\nhttps://github.com/topics/ai-chatbot\n🔹<b>ChatterBot</b>\nhttps://github.com/topics/chatbot-application",{reply_markup:{inline_keyboard:[[
         {text:"Go Back to menu",callback_data:'go_back'}]
     ]},parse_mode:"HTML"}
         
