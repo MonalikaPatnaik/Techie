@@ -33,7 +33,7 @@ bot.action('about',(ctx)=>{
         
 )})
 bot.action('que',(ctx)=>{
-    ctx.reply("Type your questions related to hackathon..I will try my best to answer☺️\n")
+  ctx.reply(`Hi! Monalika, how can I help you?`)
 })
 bot.action('go_back',(ctx)=>{
     // ctx.deleteMessage()
@@ -54,4 +54,11 @@ bot.action('res',(ctx)=>{
         
 )
 })
+bot.on('message',(ctx)=>{
+  ctx.reply(`Hi! ${ctx.message.from.first_name},\nKindly head over to the FAQ section of the website or Contact us at--`,{
+    reply_markup:{inline_keyboard:[[
+        {text:"Instagram",url:"https://www.instagram.com/celestialbiscuit/"}],[{text:"Linkedin",url:"https://www.linkedin.com/company/celestial-biscuit-igdtuw/"}],[{text:"Twitter",url:"https://twitter.com/cbigdtuw?lang=en"}],[{text:"Mail Us ✉️",url:"celestialbiscuit0.0@gmail.com"}],[{text:"Go Back to menu",callback_data:'go_back'}]
+    ]}
+})
+});
 bot.launch()
